@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: xgb-fraud-api
+    env: docker
+    plan: starter
+    region: oregon
+    autoDeploy: true
+    healthCheckPath: "/health"
+    dockerCommand: ""
+    envVars:
+      - key: MODEL_PATH
+        value: /app/xgb_fraud_model_no_smote.pkl
+      - key: FEATURES_PATH
+        value: /app/feature_columns.npy
+      - key: PREPROCESSOR_PATH
+        value: /app/preprocess_pipeline.pkl
+      - key: META_PATH
+        value: /app/model_meta.json
