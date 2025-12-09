@@ -1,0 +1,29 @@
+{
+  "saved_at": "2025-12-06T15:22:31.177899Z",
+  "model_file": "xgb_fraud_model_no_smote.pkl",
+  "features_file": "feature_columns.npy",
+  "preprocess_file": "preprocess_pipeline.pkl",
+  "roc_auc": 0.9995083945353413,
+  "average_precision": 0.9147002206386079,
+  "best_threshold_by_f1": 0.9806426167488098,
+  "best_f1": 0.8550087873457247,
+  "confusion_at_best": {
+    "tn": 1906018,
+    "fp": 147,
+    "fn": 513,
+    "tp": 1946
+  },
+  "n_test": 1908624,
+  "scale_pos_weight": 775.1333217148832,
+  "best_params": {
+    "subsample": 0.7,
+    "n_estimators": 200,
+    "min_child_weight": 5,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "gamma": 1.0,
+    "colsample_bytree": 0.8
+  },
+  "use_smote": false,
+  "use_gpu": true
+}
